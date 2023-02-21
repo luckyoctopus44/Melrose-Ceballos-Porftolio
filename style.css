@@ -1,0 +1,40 @@
+.home-body{
+    background: linear-gradient(
+    to right,
+    white 0%, white 50%, #ff9b4b 50%, #ff9b4b 100%
+    );
+    
+}
+.home-container{
+background-color: black;
+width: 100vh;
+height: 50vh;
+color: white;
+border: 50px groove;
+border-left-color: darkorange;
+border-right-color: darkorange;
+margin: auto;
+margin-top: 22vh;
+}
+.home-hi{
+    text-align: center;
+    font-size: 120px;
+    overflow: hidden;
+    border-right: .05em solid orange;
+    white-space: nowrap;
+    letter-spacing: 0em;
+    animation: typewriter 5s steps(30),
+blink 1s step-end infinite;
+margin: auto;
+margin-top: 15vh;
+}
+
+
+@keyframes typewriter {
+    from { width: 0% }
+    to { width: 100% }
+  }
+@keyframes blink{
+    from, to { border-color: white;}
+    50% { border-color: orange; }
+  }
