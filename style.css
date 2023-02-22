@@ -1,3 +1,4 @@
+/***************HOME CSS *************/
 .home-body{
     background: linear-gradient(
     to right,
@@ -32,16 +33,17 @@ margin-top: 15vh;
 #name{
   animation: showElement 1s linear 3s forwards, typeName 3s steps(40), blink 1s step-end infinite, hideElement 0.1s linear 6s forwards;
   opacity: 0;
-  margin-top: -17vh;
+  margin-top: -15vh;
+  font-size: 100px;
 }
 #home-name{
   font-size: 110px;
-  margin-top: -19vh;
+  margin-top: -25vh;
   animation: showName 1s linear 6s forwards, hideName 0.1s 9s forwards;
   opacity: 0;
 }
 #homeWelcome{
-  font-size: 110px;
+  font-size: 100px;
   margin-top: -30vh;
   opacity: 0;
   animation: showWelcome 1s linear 9s forwards;
@@ -64,7 +66,104 @@ margin-top: 15vh;
   color: orange;
   border-color: #f6a809;
 }
+/********************ABOUT ME CSS****************/
+.aboutBody{
+  background: linear-gradient(
+    to right,
+    white 0%, white 50%, #ff9b4b 50%, #ff9b4b 100%
+    );
 
+}
+.navContainer{
+  height: 10vh;
+  background-color: white;
+  margin-top: -1.5vh;
+  width: 1440px;
+  margin-left: -1vw;
+  border: 3px solid salmon;
+}
+@media only screen and (max-width: 600px){
+.navContainer{
+  width: 400px;
+  margin-left: -8px;
+}
+}
+
+.aboutName{
+  text-align: center;
+  font-size: 50px;
+  margin-top: -8.5vh;
+  letter-spacing: 0.1em;
+  margin-right: -30px;
+  
+}
+@media only screen and (max-width: 600px ) {
+  .aboutName{
+    font-size: 22px;
+    margin-left: 12px;
+  }
+}
+.aboutMission{
+  font-size: 35px;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 600px){
+.aboutMission{
+  font-size: 15px;
+}
+}
+.aboutVideo{
+  margin-top: 10vh;
+  margin-left: 20vw;
+  height: 450px;
+  width: 800px;
+}
+@media only screen and (max-width: 600px){
+  .aboutVideo{
+    height: 300px;
+    width: 345px;
+    margin-left: 6px;
+    margin-top: 40px;;
+  }
+}
+.aboutHome{
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 25px;
+  color: darkorange;
+  background-color: white;
+  border: 3px double black;
+  letter-spacing: 0.1em;
+}
+.aboutAboutMe{
+  margin-left: 100px;
+  color: darkorange;
+  background-color: white;
+  border: 3px double black;
+  letter-spacing: 0.1em;
+  font-size: 25px;
+}
+.aboutProjects{
+  font-size: 25px;
+  border: 3px double black;
+  color: darkorange;
+  background-color: white;
+  letter-spacing: 0.1em;
+  margin-left: 1060px;
+  margin-top: -25px;
+  display: flex;
+  
+}
+.aboutContact{
+  font-size: 25px;
+  border: 3px double black;
+  color: darkorange;
+  background-color: white;
+  letter-spacing: 0.1em;
+  margin-left: 1240px;
+  margin-top: -38px;
+  display: flex;
+}
 /*********************KEYFRAMES******************/
 @keyframes typewriter {
     from { width: 0% }
