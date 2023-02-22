@@ -10,31 +10,122 @@ background-color: black;
 width: 100vh;
 height: 50vh;
 color: white;
-border: 50px groove;
+border: 50px double;
 border-left-color: darkorange;
 border-right-color: darkorange;
 margin: auto;
 margin-top: 22vh;
 }
-.home-hi{
+h1{
     text-align: center;
     font-size: 120px;
     overflow: hidden;
     border-right: .05em solid orange;
     white-space: nowrap;
     letter-spacing: 0em;
-    animation: typewriter 5s steps(30),
-blink 1s step-end infinite;
 margin: auto;
 margin-top: 15vh;
 }
+#home-hi{
+  animation: typewriter 3s steps(40),blink 1s step-end infinite, hideElement 0.1s linear 3s forwards;
+}
+#name{
+  animation: showElement 1s linear 4s forwards, hideElement 0.1s linear 7s forwards;
+  opacity: 0;
+  margin-top: -17vh;
+}
+#home-name{
+  font-size: 110px;
+  margin-top: -19vh;
+  animation: showName 1s linear 8s forwards, hideName 0.1s 12s forwards;
+  opacity: 0;
+}
+#homeWelcome{
+  font-size: 110px;
+  margin-top: -30vh;
+  opacity: 0;
+  animation: showWelcome 1s linear 12s forwards;
+}
+#exploreButton{
+  text-align: center;
+  margin-left: 41vw;
+  font-size: 50px;
+  margin-top: -55px;
+  display: flex;
+  background: #f6a809;
+  color: brown;
+  border: 5px solid brown;
+  opacity: 0;
+  animation: showButton 1s linear 14s forwards;
+}
+#exploreButton:hover{
+  background: black;
+  color: orange;
+  border-color: #f6a809;
+}
 
-
+/*********************KEYFRAMES******************/
 @keyframes typewriter {
     from { width: 0% }
-    to { width: 100% }
+    to { width: 100%}
   }
 @keyframes blink{
     from, to { border-color: white;}
     50% { border-color: orange; }
   }
+  @keyframes hideElement{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+@keyframes showElement{
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
+@keyframes hideElement{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes showName{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes hideName{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes showWelcome{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes showButton{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
