@@ -76,11 +76,15 @@ margin-top: 15vh;
 }
 .navContainer{
   height: 10vh;
-  background-color: white;
-  margin-top: -1.5vh;
-  width: 1440px;
-  margin-left: -1vw;
-  border: 3px solid salmon;
+  background-color: wheat;
+  position: fixed;
+  top: 0; 
+  left:0;
+  margin: 0px;
+  padding:10px 70px 10px 70px;
+  width: 100%;
+  right: 0;
+  border-bottom: 6px solid salmon;
 }
 @media only screen and (max-width: 600px){
 .navContainer{
@@ -92,7 +96,7 @@ margin-top: 15vh;
 .aboutName{
   text-align: center;
   font-size: 50px;
-  margin-top: -8.5vh;
+  margin-top: -10vh;
   letter-spacing: 0.1em;
   margin-right: -30px;
   
@@ -113,8 +117,8 @@ margin-top: 15vh;
 }
 }
 .aboutVideo{
-  margin-top: 10vh;
-  margin-left: 20vw;
+  margin-top: 200px;
+  margin-left: 21vw;
   height: 450px;
   width: 800px;
 }
@@ -128,41 +132,147 @@ margin-top: 15vh;
 }
 .aboutHome{
   margin-top: 60px;
-  margin-left: 50px;
+  margin-left: 10px;
   font-size: 25px;
   color: darkorange;
   background-color: white;
-  border: 3px double black;
+  border: 6px double black;
   letter-spacing: 0.1em;
 }
 .aboutAboutMe{
   margin-left: 100px;
   color: darkorange;
   background-color: white;
-  border: 3px double black;
+  border: 6px double black;
   letter-spacing: 0.1em;
   font-size: 25px;
 }
 .aboutProjects{
   font-size: 25px;
-  border: 3px double black;
+  border: 6px double black;
   color: darkorange;
   background-color: white;
   letter-spacing: 0.1em;
-  margin-left: 1060px;
-  margin-top: -25px;
+  margin-left: 920px;
+  margin-top: -50px;
   display: flex;
   
 }
 .aboutContact{
   font-size: 25px;
-  border: 3px double black;
+  border: 6px double black;
   color: darkorange;
   background-color: white;
   letter-spacing: 0.1em;
-  margin-left: 1240px;
-  margin-top: -38px;
+  margin-left: 1100px;
+  margin-top: -42px;
   display: flex;
+}
+/*************PROJECTS***************************/
+.projectsNav{
+  height: 10vh;
+  background-color: wheat;
+  position: fixed;
+  top: 0; 
+  left:0;
+  margin: 0px;
+  padding:10px 70px 10px 70px;
+  width: 100%;
+  right: 0;
+  border-bottom: 6px solid salmon;
+
+}
+body{
+  background: linear-gradient(
+    to right,
+    white 0%, white 50%, #ff9b4b 50%, #ff9b4b 100%
+)}
+.projectsHome{
+  margin-top: 60px;
+  margin-left: 10px;
+  font-size: 25px;
+  color: darkorange;
+  background-color: white;
+  border: 6px double black;
+  letter-spacing: 0.1em;
+}
+.projectsAboutMe{
+  margin-left: 100px;
+  color: darkorange;
+  background-color: white;
+  border: 6px double black;
+  letter-spacing: 0.1em;
+  font-size: 25px;
+}
+.projectsProjects{
+  font-size: 25px;
+  border: 6px double black;
+  color: darkorange;
+  background-color: white;
+  letter-spacing: 0.1em;
+  margin-left: 920px;
+  margin-top: -50px;
+  display: flex;
+  
+}
+.projectsContactMe{
+  font-size: 25px;
+  border: 6px double black;
+  color: darkorange;
+  background-color: white;
+  letter-spacing: 0.1em;
+  margin-left: 1100px;
+  margin-top: -42px;
+  display: flex;
+}
+
+/**************CAROUSEL********************/
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 200px;
+  display: flex;
+  border: 6px solid black;
+  border-radius: 25px;
+
+}
+.projectsCarousel {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: darkorange;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,1);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 /*********************KEYFRAMES******************/
 @keyframes typewriter {
