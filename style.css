@@ -30,21 +30,21 @@ margin-top: 15vh;
   animation: typewriter 3s steps(40),blink 1s step-end infinite, hideElement 0.1s linear 3s forwards;
 }
 #name{
-  animation: showElement 1s linear 4s forwards, hideElement 0.1s linear 7s forwards;
+  animation: showElement 1s linear 3s forwards, typeName 3s steps(40), blink 1s step-end infinite, hideElement 0.1s linear 6s forwards;
   opacity: 0;
   margin-top: -17vh;
 }
 #home-name{
   font-size: 110px;
   margin-top: -19vh;
-  animation: showName 1s linear 8s forwards, hideName 0.1s 12s forwards;
+  animation: showName 1s linear 6s forwards, hideName 0.1s 9s forwards;
   opacity: 0;
 }
 #homeWelcome{
   font-size: 110px;
   margin-top: -30vh;
   opacity: 0;
-  animation: showWelcome 1s linear 12s forwards;
+  animation: showWelcome 1s linear 9s forwards;
 }
 #exploreButton{
   text-align: center;
@@ -56,7 +56,8 @@ margin-top: 15vh;
   color: brown;
   border: 5px solid brown;
   opacity: 0;
-  animation: showButton 1s linear 14s forwards;
+  animation: showButton 1s linear 11s forwards;
+
 }
 #exploreButton:hover{
   background: black;
@@ -88,6 +89,22 @@ margin-top: 15vh;
 100%{
   opacity: 1;
 }
+}
+@keyframes typewriter {
+  from { width: 0% }
+  to { width: 100%}
+}
+@keyframes blink{
+  from, to { border-color: white;}
+  50% { border-color: orange; }
+}
+@keyframes hideElement{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 @keyframes hideElement{
   0%{
