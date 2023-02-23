@@ -474,63 +474,83 @@ body{
   text-align: center;
 }
 /*********************CONTACT ME*****************/
+.contactBody{
+  background-image: url("https://cutewallpaper.org/cdn-cgi/mirage/91b98c5373d6a01796e55b9f978389531ff4e5ebae85abd935c54ab8d42fdd46/1280/28/crazy-wallpaper-gif/wallpaper-gif-album-on-imgur.gif");
+}
 .contactNav{
-    height: 10vh;
-    background-color: wheat;
-    position: fixed;
-    top: 0; 
-    left:0;
-    margin: 0px;
-    padding:10px 70px 10px 70px;
-    width: 100%;
-    right: 0;
-    border-bottom: 6px solid salmon;
+  height: 10vh;
+  background-color: black;
+  position: fixed;
+  top: 0; 
+  left:0;
+  margin: 0px;
+  padding:10px 70px 10px 70px;
+  width: 100%;
+  right: 0;
+  border-bottom: 6px solid black;
+  opacity: 0.7;
   
   }
   .contactHome{
     margin-top: 60px;
-    margin-left: 10px;
-    font-size: 25px;
-    color: darkorange;
-    background-color: white;
-    border: 6px double black;
-    letter-spacing: 0.1em;
+  margin-left: 10px;
+  font-size: 25px;
+  color: darkorange;
+  background-color: darkblue;
+  border: 6px double black;
+  letter-spacing: 0.1em;
+  cursor: pointer;
   }
   .contactAboutMe{
     margin-left: 100px;
     color: darkorange;
-    background-color: white;
+    background-color: darkblue;
     border: 6px double black;
     letter-spacing: 0.1em;
     font-size: 25px;
+    cursor: pointer;
   }
   .contactProjects{
     font-size: 25px;
     border: 6px double black;
     color: darkorange;
-    background-color: white;
+    background-color: darkblue;
     letter-spacing: 0.1em;
     margin-left: 920px;
     margin-top: -50px;
     display: flex;
+    cursor: pointer;
     
   }
   .contactContactMe{
     font-size: 25px;
     border: 6px double black;
     color: darkorange;
-    background-color: white;
+    background-color: darkblue;
     letter-spacing: 0.1em;
     margin-left: 1100px;
     margin-top: -42px;
     display: flex;
+    cursor: pointer;
   }
   .contactPerson{
     margin-top: 200px;
     margin-left: 80px;
     height: 500px;
   }
-  
+  .contactResume{
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 35px;
+    border: 8px double black;
+  }
+  .contactModal{
+    background-color: palegoldenrod;
+    width: 550px;
+    height: 650px;
+    margin-left: 440px;
+    margin-top: -150px; 
+  }
 /*********************KEYFRAMES******************/
   @keyframes hideElement{
     0%{
