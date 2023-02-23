@@ -1,31 +1,46 @@
 /***************HOME CSS *************/
 .home-body{
-    background: linear-gradient(
-    to right,
-    white 0%, white 50%, #ff9b4b 50%, #ff9b4b 100%
-    );
-    
+    background-image: url("https://wallpaperaccess.com/full/5927911.gif");
+    background-repeat: no-repeat;
+    background-size: 1500px, 1000px;
+}
+@media only screen and (max-width: 900px){
+.home-body{
+ height: 375px;
+ width: 600px;
+}
 }
 .home-container{
 background-color: black;
 width: 100vh;
 height: 50vh;
 color: white;
-border: 50px double;
-border-left-color: darkorange;
-border-right-color: darkorange;
+border: 10px double darkblue;
+opacity: 0.8;
 margin: auto;
 margin-top: 22vh;
+}
+@media only screen and (max-width: 900px){
+  .home-container{
+    width: 400px;
+    margin-right: 500px;
+    
+  }
 }
 h1{
     text-align: center;
     font-size: 120px;
     overflow: hidden;
-    border-right: .05em solid orange;
     white-space: nowrap;
     letter-spacing: 0em;
 margin: auto;
 margin-top: 15vh;
+}
+@media only screen and (max-width: 900px){
+  #home-hi{
+    font-size: 55px;
+    margin-top: 175px;
+  }
 }
 #home-hi{
   animation: typewriter 3s steps(40),blink 1s step-end infinite, hideElement 0.1s linear 3s forwards;
@@ -36,11 +51,23 @@ margin-top: 15vh;
   margin-top: -15vh;
   font-size: 100px;
 }
+@media only screen and (max-width: 900px){
+  #name{
+    font-size: 50px;
+    margin-top: -75px
+  }
+}
 #home-name{
   font-size: 110px;
   margin-top: -25vh;
   animation: showName 1s linear 6s forwards, hideName 0.1s 9s forwards;
   opacity: 0;
+}
+@media only screen and (max-width: 900px){
+  #home-name{
+    font-size: 50px;
+    margin-top: -50px;
+  }
 }
 #homeWelcome{
   font-size: 100px;
@@ -48,23 +75,37 @@ margin-top: 15vh;
   opacity: 0;
   animation: showWelcome 1s linear 9s forwards;
 }
+@media only screen and (max-width: 900px){
+  #homeWelcome{
+    font-size: 50px;
+    margin-top: -155px;
+  }
+}
 #exploreButton{
   text-align: center;
-  margin-left: 41vw;
+  margin-left: 40vw;
   font-size: 50px;
   margin-top: -55px;
   display: flex;
-  background: #f6a809;
-  color: brown;
-  border: 5px solid brown;
+  background: black;
+  color: purple;
+  border: 5px solid darkblue;
   opacity: 0;
   animation: showButton 1s linear 11s forwards;
 
 }
+@media only screen and (max-width: 900px){
+  #exploreButton{
+    font-size: 35px;
+    margin-top: -100px;
+    margin-left: 100px;
+    display: flex;
+  }
+}
 #exploreButton:hover{
   background: black;
-  color: orange;
-  border-color: #f6a809;
+  color: violet;
+  border-color: cyan;
 }
 /********************ABOUT ME CSS****************/
 .aboutBody{
@@ -274,15 +315,65 @@ body{
   width: 100%;
   text-align: center;
 }
+/*********************CONTACT ME*****************/
+.contactNav{
+    height: 10vh;
+    background-color: wheat;
+    position: fixed;
+    top: 0; 
+    left:0;
+    margin: 0px;
+    padding:10px 70px 10px 70px;
+    width: 100%;
+    right: 0;
+    border-bottom: 6px solid salmon;
+  
+  }
+  .contactHome{
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: darkorange;
+    background-color: white;
+    border: 6px double black;
+    letter-spacing: 0.1em;
+  }
+  .contactAboutMe{
+    margin-left: 100px;
+    color: darkorange;
+    background-color: white;
+    border: 6px double black;
+    letter-spacing: 0.1em;
+    font-size: 25px;
+  }
+  .contactProjects{
+    font-size: 25px;
+    border: 6px double black;
+    color: darkorange;
+    background-color: white;
+    letter-spacing: 0.1em;
+    margin-left: 920px;
+    margin-top: -50px;
+    display: flex;
+    
+  }
+  .contactContactMe{
+    font-size: 25px;
+    border: 6px double black;
+    color: darkorange;
+    background-color: white;
+    letter-spacing: 0.1em;
+    margin-left: 1100px;
+    margin-top: -42px;
+    display: flex;
+  }
+  .contactPerson{
+    margin-top: 200px;
+    margin-left: 80px;
+    height: 500px;
+  }
+  
 /*********************KEYFRAMES******************/
-@keyframes typewriter {
-    from { width: 0% }
-    to { width: 100%}
-  }
-@keyframes blink{
-    from, to { border-color: white;}
-    50% { border-color: orange; }
-  }
   @keyframes hideElement{
     0%{
       opacity: 1;
@@ -298,14 +389,6 @@ body{
 100%{
   opacity: 1;
 }
-}
-@keyframes typewriter {
-  from { width: 0% }
-  to { width: 100%}
-}
-@keyframes blink{
-  from, to { border-color: white;}
-  50% { border-color: orange; }
 }
 @keyframes hideElement{
   0%{
