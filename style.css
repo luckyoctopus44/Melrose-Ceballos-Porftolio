@@ -106,18 +106,23 @@ margin-top: 15vh;
   background: black;
   color: violet;
   border-color: cyan;
+  cursor: pointer;
 }
 /********************ABOUT ME CSS****************/
 .aboutBody{
-  background: linear-gradient(
-    to right,
-    white 0%, white 50%, #ff9b4b 50%, #ff9b4b 100%
-    );
-
+  background-image: url("https://wallpaperaccess.com/full/7270381.gif") ;
+  background-repeat: no-repeat;
+  background-size: 1500px, 1000px;
+  background-position: fixed;
+}
+@media only screen and (max-width: 900px){
+  .aboutBody{
+    height: 700px;
+  }
 }
 .navContainer{
   height: 10vh;
-  background-color: wheat;
+  background-color: black;
   position: fixed;
   top: 0; 
   left:0;
@@ -125,12 +130,13 @@ margin-top: 15vh;
   padding:10px 70px 10px 70px;
   width: 100%;
   right: 0;
-  border-bottom: 6px solid salmon;
+  border-bottom: 6px solid black;
+  opacity: 0.7;
 }
 @media only screen and (max-width: 600px){
 .navContainer{
-  width: 400px;
-  margin-left: -8px;
+  width: 420px;
+  margin-left: -5px;
 }
 }
 
@@ -158,9 +164,9 @@ margin-top: 15vh;
 }
 }
 .aboutVideo{
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 21vw;
-  height: 450px;
+  height: 500px;
   width: 800px;
 }
 @media only screen and (max-width: 600px){
@@ -176,39 +182,133 @@ margin-top: 15vh;
   margin-left: 10px;
   font-size: 25px;
   color: darkorange;
-  background-color: white;
+  background-color: darkblue;
   border: 6px double black;
   letter-spacing: 0.1em;
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px){
+  .aboutHome{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: -30px;
+  }
+}
+.aboutHome:hover{
+  background-color: cyan;
+  opacity: 1;
+  border-color: hotpink;
+  color: black;
 }
 .aboutAboutMe{
   margin-left: 100px;
   color: darkorange;
-  background-color: white;
+  background-color: darkblue;
   border: 6px double black;
   letter-spacing: 0.1em;
   font-size: 25px;
+  cursor: pointer;
+}
+.aboutAboutMe:hover{
+  background-color: cyan;
+  opacity: 1;
+  border-color: hotpink;
+  color: black;
+}
+@media only screen and (max-width: 900px){
+  .aboutAboutMe{
+    font-size: 15px;
+    margin-left: 3px;
+  }
 }
 .aboutProjects{
   font-size: 25px;
   border: 6px double black;
   color: darkorange;
-  background-color: white;
+  background-color: darkblue;
   letter-spacing: 0.1em;
   margin-left: 920px;
   margin-top: -50px;
   display: flex;
+  cursor: pointer;
   
+}
+.aboutProjects:hover{
+  background-color: cyan;
+  opacity: 1;
+  border-color: hotpink;
+  color: black;
+}
+@media only screen and (max-width: 900px){
+  .aboutProjects{
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: -30px;
+  }
 }
 .aboutContact{
   font-size: 25px;
   border: 6px double black;
   color: darkorange;
-  background-color: white;
+  background-color: darkblue;
   letter-spacing: 0.1em;
   margin-left: 1100px;
   margin-top: -42px;
   display: flex;
+  cursor: pointer;
 }
+.aboutContact:hover{
+  background-color: cyan;
+  opacity: 1;
+  border-color: hotpink;
+  color: black;
+}
+@media only screen and (max-width: 900px){
+  .aboutContact{
+    font-size: 15px;
+    margin-left: 240px;
+    margin-top: -31px;
+  }
+}
+.aboutActI{
+  color: black;
+ -webkit-text-stroke: 1px yellow;
+  margin-top: 250px;
+  font-size: 90px;
+  margin-left: 55px;
+  font-family: 'Poller One', cursive;
+  animation: intro 5s ease-out forwards;
+  text-align: center;
+}
+.aboutParagraph{
+  color: black;
+  text-align: center;
+  -webkit-text-stroke: 0.8px yellow;
+  font-size: 32px;
+  margin-top: -280px;
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  opacity: 0;
+  animation: showParagraph 5s ease-in 3s forwards;
+  
+}
+.aboutParagraph:hover{
+  background-color: black;
+  color: white;
+  border: 3px solid cyan;
+  opacity: 0.8;
+  -webkit-text-stroke: 0.8px white;
+}
+@media only screen and (max-width: 900px){
+  .aboutParagraph{
+    font-size: 20px;
+    margin-top: -350px;
+    width: 500px;
+    margin-left: 50px;
+    text-align: center;
+  }
+}
+
 /*************PROJECTS***************************/
 .projectsNav{
   height: 10vh;
@@ -435,6 +535,31 @@ body{
     opacity: 0;
   }
   100%{
+    opacity: 1;
+  }
+}
+/******* STARWARS KEYFRAMES **********/
+@keyframes intro{
+  0%{
+    transform: scale(10);
+    opacity: 1;
+  }
+  99%{
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  100%{
+    scale: (0.1);
+    opacity: 0;
+  }
+}
+@keyframes showParagraph{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
     opacity: 1;
   }
 }
