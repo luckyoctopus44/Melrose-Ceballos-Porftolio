@@ -8,8 +8,8 @@ I am very excited to share with you my creation!
 [I am a link placeholder](#)
 
 ## Technoliges Used List
-..* Visual Studio Code
-..* Github
+* Visual Studio Code
+* Github
 
 ## Installation Instructions
 To install Visual Studio Code
@@ -17,7 +17,7 @@ To install Visual Studio Code
 [Click Here for VS Code link](https://code.visualstudio.com/Download)
 
 ## Wireframes
-As you may see, I used my wireframes a skeleton on how I want my portfolio to look like and made several improvisations
+As you may see, I used my wireframes as a skeleton on how I want my portfolio to look like and made improvisations
 
 #### HOME PAGE
 ![wireframeHome](home-wireframe.png)
