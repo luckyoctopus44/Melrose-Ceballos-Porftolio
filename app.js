@@ -1,25 +1,46 @@
 // DIRECT BUTTON TO ABOUT ME PAGE
 function exploreClick () {
-   // location.pathname = "/about-me.html"
-    console.log(location);
+   if(location.host ===  "melroseceballos.github.io"){
+    location.pathname = "/Melrose-Ceballos-Porftolio/about-me.html"
+   }else{
+    location.pathname = '/about-me.html'
+   }
 }
 
 // DIRECT TO HOME
 function directHome(){
-    location.pathname = "/index.html"
+    if(location.host ===  "melroseceballos.github.io"){
+      location.pathname = "/Melrose-Ceballos-Porftolio/index.html"
+     }else{
+      location.pathname = '/index.html'
+     }
+
+    
 }
 // DIRECT TO ABOUT ME
 function directAboutMe() { 
- location.pathname="/about-me.html"
+  if(location.host ===  "melroseceballos.github.io"){
+    location.pathname = "/Melrose-Ceballos-Porftolio/about-me.html"
+   }else{
+    location.pathname = '/about-me.html'
+   }
  
 }
 // DIRECT PROJECTS
 function directProjects(){
-    location.pathname="/projects.html"
+  if(location.host ===  "melroseceballos.github.io"){
+    location.pathname = "/Melrose-Ceballos-Porftolio/projects.html"
+   }else{
+    location.pathname = '/projects.html'
+   }
 }
 //DIRECT CONTACT ME
 function directContactMe(){
-    location.pathname="/contact-me.html"
+  if(location.host ===  "melroseceballos.github.io"){
+    location.pathname = "/Melrose-Ceballos-Porftolio/contact-me.html"
+   }else{
+    location.pathname = '/contact-me.html'
+   }
 }
 // CAROUSEL - got info from w3schools.com
 let slideIndex = 1;
