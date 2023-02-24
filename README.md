@@ -10,6 +10,9 @@ I am very excited to share with you my creation!
 ## Technoliges Used List
 * Visual Studio Code
 * Github
+* Javascript
+* HTML
+* CSS
 
 ## Installation Instructions
 To install Visual Studio Code
