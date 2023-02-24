@@ -8,8 +8,8 @@ I am very excited to share with you my creation!
 [I am a link placeholder](#)
 
 ## Technoliges Used List
-⋅⋅* Visual Studio Code
-⋅⋅* Github
+..* Visual Studio Code
+..* Github
 
 ## Installation Instructions
 To install Visual Studio Code
