@@ -41,3 +41,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// MODAL
+ function openModal (){
+  document.getElementsByClassName('myResume')[0].style.display='block';
+ }

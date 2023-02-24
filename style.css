@@ -539,18 +539,51 @@ body{
     height: 500px;
   }
   .contactResume{
-    margin-top: 200px;
-    margin-left: 200px;
+    margin-top: 630px;
+    margin-left: 160px;
     font-size: 35px;
-    border: 8px double black;
+    border: 8px double blue;
+    background-color: black;
+    color: purple;
+    opacity: 0.8;
   }
-  .contactModal{
-    background-color: palegoldenrod;
+  .contactResume:hover{
+    background: black;
+    color: violet;
+    border-color: cyan;
+    cursor: pointer;
+  }
+  .contactLinkedIn{
+    height: 50px;
+    margin-left: 800px;
+    display: flex;
+    margin-top: -50px;
+  }
+  .contactGithub{
+  display: flex;
+  height: 60px;
+  margin-top: -58px;
+  margin-left: 620px;
+
+  }
+  .contactGmail{
+    height: 90px;
+    margin-top: -100px;
+    margin-left: 380px;
+  }
+  .myResume{
     width: 550px;
-    height: 650px;
-    margin-left: 440px;
-    margin-top: -150px; 
+    height: 680px;
+    margin-left: 800px;
+    margin-top: -140px; 
+    border: 5px solid darkblue;
+    opacity: 0.7;
+    display: none;
   }
+  .myResume:hover{
+    opacity: 1;
+  }
+
 /*********************KEYFRAMES******************/
   @keyframes hideElement{
     0%{
