@@ -1,23 +1,23 @@
 // DIRECT BUTTON TO ABOUT ME PAGE
 function exploreClick () {
-    location.href = "/about-me.html"
+    location.pathname = "/about-me.html"
 }
 
 // DIRECT TO HOME
 function directHome(){
-    location.href = "/index.html"
+    location.pathname = "/index.html"
 }
 // DIRECT TO ABOUT ME
 function directAboutMe() { 
-    location.href="/about-me.html"
+ location.pathname="/about-me.html"
 }
 // DIRECT PROJECTS
 function directProjects(){
-    location.href="/projects.html"
+    location.pathname="/projects.html"
 }
 //DIRECT CONTACT ME
 function directContactMe(){
-    location.href="/contact-me.html"
+    location.pathname="/contact-me.html"
 }
 // CAROUSEL - got info from w3schools.com
 let slideIndex = 1;
