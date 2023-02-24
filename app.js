@@ -5,7 +5,7 @@ function exploreClick () {
 
 // DIRECT TO HOME
 function directHome(){
-    location.href = "/home-page.html"
+    location.href = "/index.html"
 }
 // DIRECT TO ABOUT ME
 function directAboutMe() { 
@@ -19,7 +19,7 @@ function directProjects(){
 function directContactMe(){
     location.href="/contact-me.html"
 }
-// CAROUSEL
+// CAROUSEL - got info from w3schools.com
 let slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
