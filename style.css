@@ -71,7 +71,7 @@ margin-top: 15vh;
 }
 #homeWelcome{
   font-size: 100px;
-  margin-top: -30vh;
+  margin-top: -40vh;
   opacity: 0;
   animation: showWelcome 1s linear 9s forwards;
 }
@@ -475,7 +475,10 @@ body{
 }
 /*********************CONTACT ME*****************/
 .contactBody{
-  background-image: url("https://cutewallpaper.org/cdn-cgi/mirage/91b98c5373d6a01796e55b9f978389531ff4e5ebae85abd935c54ab8d42fdd46/1280/28/crazy-wallpaper-gif/wallpaper-gif-album-on-imgur.gif");
+  background-image: url("https://i.redd.it/bpxxqqvps4h91.gif");
+  background-repeat: no-repeat;
+  background-size: 1500px, 1000px;
+
 }
 .contactNav{
   height: 10vh;
@@ -539,13 +542,13 @@ body{
     height: 500px;
   }
   .contactResume{
-    margin-top: 630px;
-    margin-left: 160px;
+    margin-top: 378px;
+    margin-left: 80px;
     font-size: 35px;
-    border: 8px double blue;
+    border: 6px double blue;
     background-color: black;
     color: purple;
-    opacity: 0.8;
+    opacity: 1;
   }
   .contactResume:hover{
     background: black;
@@ -573,11 +576,11 @@ body{
   }
   .myResume{
     width: 550px;
-    height: 680px;
-    margin-left: 800px;
-    margin-top: -140px; 
+    height: 650px;
+    margin-left: 850px;
+    margin-top: -300px; 
     border: 5px solid darkblue;
-    opacity: 0.7;
+    opacity: 1;
     display: none;
   }
   .myResume:hover{
