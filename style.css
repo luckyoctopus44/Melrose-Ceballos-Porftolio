@@ -71,7 +71,7 @@ margin-top: 15vh;
 }
 #homeWelcome{
   font-size: 100px;
-  margin-top: -35vh;
+  margin-top: -28vh;
   opacity: 0;
   animation: showWelcome 1s linear 9s forwards;
 }
