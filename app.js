@@ -1,6 +1,7 @@
 // DIRECT BUTTON TO ABOUT ME PAGE
 function exploreClick () {
-    location.pathname = "/about-me.html"
+   // location.pathname = "/about-me.html"
+    console.log(location);
 }
 
 // DIRECT TO HOME
@@ -10,6 +11,7 @@ function directHome(){
 // DIRECT TO ABOUT ME
 function directAboutMe() { 
  location.pathname="/about-me.html"
+ 
 }
 // DIRECT PROJECTS
 function directProjects(){
