@@ -5,7 +5,7 @@
 I am very excited to share with you my creation!
 
 ## GitHub Link
-[I am a link placeholder](#)
+[Link to my portfolio](https://melroseceballos.github.io/Melrose-Ceballos-Porftolio/)
 
 ## Technoliges Used List
 * Visual Studio Code
