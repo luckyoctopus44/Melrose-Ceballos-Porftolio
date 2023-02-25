@@ -504,6 +504,13 @@ body{
   letter-spacing: 0.1em;
   cursor: pointer;
   }
+  @media only screen and (max-width: 900px){
+    .contactHome{
+      font-size: 15px;
+      margin-top: 10px;
+      margin-left: -50px;
+    }
+  }
   .contactAboutMe{
     margin-left: 100px;
     color: darkorange;
@@ -512,6 +519,12 @@ body{
     letter-spacing: 0.1em;
     font-size: 25px;
     cursor: pointer;
+  }
+  @media only screen and (max-width: 900px){
+    .contactAboutMe{
+      font-size: 15px;
+      margin-left: 3px;
+    }
   }
   .contactProjects{
     font-size: 25px;
@@ -525,6 +538,13 @@ body{
     cursor: pointer;
     
   }
+  @media only screen and (max-width: 900px){
+    .contactProjects{
+      font-size: 15px;
+      margin-left: 120px;
+      margin-top: -31px;
+    }
+  }
   .contactContactMe{
     font-size: 25px;
     border: 6px double black;
@@ -535,6 +555,13 @@ body{
     margin-top: -42px;
     display: flex;
     cursor: pointer;
+  }
+  @media only screen and (max-width: 900px){
+    .contactContactMe{
+      font-size: 15px;
+      margin-left: 210px;
+      margin-top: -31px;
+    }
   }
   .contactPerson{
     margin-top: 200px;
@@ -550,6 +577,13 @@ body{
     color: purple;
     opacity: 1;
   }
+  @media only screen and (max-width: 900px){
+    .contactResume{
+      margin-left: 40px;
+      font-size: 25px;
+      margin-top: 80px;
+    }
+  }
   .contactResume:hover{
     background: black;
     color: violet;
@@ -561,6 +595,11 @@ body{
     margin-left: 800px;
     display: flex;
     margin-top: -50px;
+  }
+  @media only screen and (max-width: 900px){
+    .contactLinkedIn{
+      margin-top: 200px;
+    }
   }
   .contactGithub{
   display: flex;
@@ -574,6 +613,12 @@ body{
     margin-top: -100px;
     margin-left: 380px;
   }
+  @media only screen and (max-width: 900px){
+    .contactGmail{
+      margin-bottom: -300px;
+      margin-left: -100px;
+  }
+}
   .myResume{
     width: 550px;
     height: 650px;
@@ -582,6 +627,14 @@ body{
     border: 5px solid darkblue;
     opacity: 1;
     display: none;
+  }
+  @media only screen and (max-width: 900px){
+    .myResume{
+      margin-left: -1px;
+      margin-top: -1px;
+      height: 400px;
+      width: 400px;
+        }
   }
   .myResume:hover{
     opacity: 1;
